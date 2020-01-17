@@ -1,5 +1,175 @@
-.wrapper{
+*,
+*::before,
+*::after
+    {box-sizing: border-box;}
+
+body{
+    margin: 0;
+    background-color: #f6f9f9;
+    font-family: 'Lato', sans-serif;
+}
+.container{
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 }
+
+/*===== header =====*/
+
+.header{
+    
+}
+
+.header__inner{
+    display: flex;
+    padding: 30px;
+}
+
+
+.tittle__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2d3950;
+    
+    margin-left: 15px ;
+}
+
+/*===== content =====*/
+
+.content__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    background: #767d8a url('/img/top-bcg.jpg') no-repeat;
+    text-align: center;
+    height: 800px;
+
+    position: relative;
+}
+
+.content__nav{
+    width: 100%;
+    max-width: 615px;
+    height: 300px;
+    color: #fff;
+
+    position: absolute;
+    bottom: 320px;
+}
+
+.content__tittle{
+    font-weight: 700;
+    font-size: 120px;
+    border-bottom: 2px solid #15a4fa ;
+    
+    padding-bottom: 15px ;
+}
+
+.content__info{
+    font-weight: 400;
+    font-size: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 65px;
+    
+}
+
+.content__btn a{
+    width: 100%;
+    max-width: 180px;
+    height: 55px;
+    border: 1px solid #15a4fa ;
+    border-radius: 3px;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 15px 30px;
+
+    transition-duration: .5s;
+}
+
+.content__btn a:hover{
+    background-color: #15a4fa;
+    font-size: 20px;
+}
+
+.arrow_down{
+    position: absolute;
+    top: 500px;
+    right: 50%;
+}
+
+
+/*===== info__about =====*/
+    
+.info__inner{
+    height: 680px;
+
+    text-align: center;
+}
+
+.info__up{
+    margin-top: 80px;
+}
+
+.info__tittle{
+    margin-bottom: 30px;
+    
+    font-size: 40px;
+    font-weight: 400;
+    color: #2d3950;
+}
+
+.info__text{
+    font-size: 20px;
+    font-weight: 400;
+    color: #9f9f9f;
+    line-height: 30px;
+}
+
+/*===== info__down =====*/
+
+.info__content{
+    margin-top: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon--btn{
+    margin-left: 75px;
+}
+
+.info__img_content{
+    background: url('/img/bgc-icon.png') no-repeat ;
+    height: 100px;
+    width: 100px;
+}
+
+.info__tittle_content{
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #2d3950;
+}
+
+.info__text_content{
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+
+
+
