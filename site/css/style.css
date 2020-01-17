@@ -147,13 +147,18 @@ body{
 }
 
 .icon--btn{
+    
     margin-left: 75px;
+
+    text-align: center;
+}
+
+.icon--btn:nth-child(1){
+    margin: 0;
 }
 
 .info__img_content{
-    background: url('/img/bgc-icon.png') no-repeat ;
-    height: 100px;
-    width: 100px;
+    margin: 0 auto;
 }
 
 .info__tittle_content{
@@ -168,6 +173,12 @@ body{
     font-size: 15px;
     font-weight: 400;
     color: #9f9f9f;
+}
+
+/*===== slaider =====*/
+
+.slaider{
+    margin-top: 145px ;
 }
 
 
