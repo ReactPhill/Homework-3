@@ -16,10 +16,6 @@ body{
 
 /*===== header =====*/
 
-.header{
-    
-}
-
 .header__inner{
     display: flex;
     padding: 30px;
@@ -217,4 +213,73 @@ body{
     margin: 10px;
 }
 
-/*===== slaider =====*/
+/*===== intro-user =====*/
+
+.intro-user{
+    background: rgb(45, 57, 80) url('/img/intro-user.jpg') center no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.intro-content{
+    height: 900px;
+    text-align: center;
+    background:rgba(45, 57, 80, .9) center;
+}
+
+.intro-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.intro-menu-up{
+    margin: 160px 0;
+}
+
+.menu-up-tittle{
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.menu-up-text{
+    font-size: 15px;
+    font-weight: 400;
+    color: #929294;
+    margin: 25px 0;
+}
+
+.menu-up2, .menu-up3{
+    margin: 15px 0;
+}
+
+.container__menu__up{
+    font-size: 15px;;
+    font-weight: 400;
+    color: #929294;
+    
+   
+}
+
+
+/*===== footer =====*/
+
+/* .footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    height: 90px;
+    margin: 0 220px;
+    
+}
+
+.footer__content__left{
+    font-size: 15px;
+    font-weight: 400;
+    color: #9f9f9f;
+} */
