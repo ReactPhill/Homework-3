@@ -178,9 +178,43 @@ body{
 /*===== slaider =====*/
 
 .slaider{
-    margin-top: 145px ;
+    width: 100%;
+    max-width: 1140px;
+    height: 820px;
+    
+    margin-top: 20px;
+    margin: 0 auto;
+    
+    text-align: center;
+}
+
+.slaider__block__up{
+    margin-bottom: 80px;
+}
+
+.slaider__tittle{
+    font-size: 40px;
+    font-weight: 400;
+    color: #2d3950;
+}
+
+.slaider__text{
+    font-size: 15px;
+    font-weight: 400;
+    color: #9f9f9f;
+
+    margin-top: 20px;
 }
 
 
+.slaider__block__down{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
+.slaider__item{
+    margin: 10px;
+}
 
+/*===== slaider =====*/
