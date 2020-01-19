@@ -211,12 +211,27 @@ body{
 
 .slaider__item{
     margin: 10px;
+    position: relative;
+}
+
+.works__content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(43, 172, 250, .9);
+    opacity: 0;
+
+    transition-duration: .5s;
+}
+
+.works__content:hover{
+    opacity: 1;
 }
 
 /*===== intro-user =====*/
 
-.intro-user{ 
-}
 
 .intro-content{
     height: 900px;
@@ -255,28 +270,30 @@ body{
     margin: 15px 0;
 }
 
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="email"]{
     
-
+    padding: 20px;
     background: none;
     border: 1px solid #929294;
     border-radius: 4px;
 
     height: 60px;
     width: 550px;
-    
+
+    font-size: 15px;
+    font-weight: 400;
+    color: #929294;
 }
 
 textarea{
+    padding: 20px;
     background: none;
     border: 1px solid #929294;
     border-radius: 4px;
 
     width: 550px;
     height: 155px;
-}
 
-.container__menu__center{
     font-size: 15px;
     font-weight: 400;
     color: #929294;
@@ -342,7 +359,7 @@ textarea{
 .menu-up5 input{
     background: none;
     border: 1px solid #15a4fa;
-    border-radius: 4px;
+    border-radius: 4px ;
 
     height: 50px;
     width: 150px;
