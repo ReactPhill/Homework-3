@@ -215,19 +215,13 @@ body{
 
 /*===== intro-user =====*/
 
-.intro-user{
-    background: rgb(45, 57, 80) url('/img/intro-user.jpg') center no-repeat;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
+.intro-user{ 
 }
 
 .intro-content{
     height: 900px;
     text-align: center;
-    background:rgba(45, 57, 80, .9) center;
+    background:rgba(45, 57, 80) url('/img/intro-user.jpg') center no-repeat; 
 }
 
 .intro-menu{
@@ -235,6 +229,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;    
+    background: rgba(45, 57, 80, .9);
+    width: 1600px;
+    height: 900px;
 }
 
 .intro-menu-up{
@@ -258,18 +255,113 @@ body{
     margin: 15px 0;
 }
 
-.container__menu__up{
-    font-size: 15px;;
+input[type="text"], input[type="password"]{
+    
+
+    background: none;
+    border: 1px solid #929294;
+    border-radius: 4px;
+
+    height: 60px;
+    width: 550px;
+    
+}
+
+textarea{
+    background: none;
+    border: 1px solid #929294;
+    border-radius: 4px;
+
+    width: 550px;
+    height: 155px;
+}
+
+.container__menu__center{
+    font-size: 15px;
     font-weight: 400;
     color: #929294;
+}
+
+.container__menu__form2{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.label_up4{
+    display: flex;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    display: inline-block;
+    background: #99a0a9;
+    width: 18px;
+    height: 18px;
+    border: 1px solid none ;
+    border-radius: 4px;
+    position: relative;
+}
+
+.fake::before{
+    content:'\2714';
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: translate(-50%,-50% );
     
-   
+    
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+
+    transition: .1s;
+    opacity: 0;
+
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+.fake__text{
+    margin-left: 12px;
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+.menu-up5 input{
+    background: none;
+    border: 1px solid #15a4fa;
+    border-radius: 4px;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+    transition-duration: .5s;
+}
+
+.menu-up5 input:hover{
+    background-color: #15a4fa;
 }
 
 
 /*===== footer =====*/
 
-/* .footer__content{
+.footer__content{
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -282,4 +374,4 @@ body{
     font-size: 15px;
     font-weight: 400;
     color: #9f9f9f;
-} */
+}
