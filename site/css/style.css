@@ -39,7 +39,7 @@ body{
     align-items: center;
     
     
-    background: #767d8a url('/img/top-bcg.jpg') no-repeat;
+    background: #767d8a url('/img/intro-user.jpg') center no-repeat;
     text-align: center;
     height: 800px;
 
@@ -240,12 +240,14 @@ body{
 }
 
 /*===== intro-user =====*/
-
-
 .intro-content{
-    height: 900px;
+    
     text-align: center;
-    background:rgba(45, 57, 80) url('/img/intro-user.jpg') center no-repeat; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-menu{
@@ -256,10 +258,16 @@ body{
     background: rgba(45, 57, 80, .9);
     width: 1600px;
     height: 900px;
+
+    position: relative;
 }
 
 .intro-menu-up{
-    margin: 160px 0;
+    position: absolute;
+    background: rgba(45, 57, 80, .9);
+    padding: 205px 525px;
+    
+    
 }
 
 .menu-up-tittle{
